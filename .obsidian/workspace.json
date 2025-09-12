@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "1e2478e641c315ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "02773bb7785f3ac7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8fe84a7b14eb750",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FÍSICA.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "FÍSICA"
+            }
+          },
+          {
+            "id": "e25392ecc027032e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "EDPs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "EDPs"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f2fa3861396aed9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "10e3d113ae518527",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "351268acc95f66e6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de fitxers"
+            }
+          },
+          {
+            "id": "242605c0fc40779d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Cerca"
+            }
+          },
+          {
+            "id": "2b017df4a00ae88a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadors"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9cbf2b512f6e12e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "b43ceb4ac5e1185b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d27f5861381dcd55",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "FÍSICA.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Retroenllaços per a FÍSICA"
+            }
+          },
+          {
+            "id": "3c53aecb45f60075",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "FÍSICA.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enllaços sortints de FÍSICA"
+            }
+          },
+          {
+            "id": "cfb809d980711ffc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetes"
+            }
+          },
+          {
+            "id": "e902d8de329d3c37",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "EDPs.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de EDPs"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Obre el selector ràpid": false,
+      "graph:Obre la vista gràfica": false,
+      "canvas:Crea un llenç nou": false,
+      "daily-notes:Obre la nota d'avui": false,
+      "templates:Inserir plantilla": false,
+      "command-palette:Obre la paleta d'ordres": false
+    }
+  },
+  "active": "e25392ecc027032e",
+  "lastOpenFiles": [
+    "FÍSICA.md",
+    "EDPs.md",
+    "EDP",
+    "Hola.md"
+  ]
+}
