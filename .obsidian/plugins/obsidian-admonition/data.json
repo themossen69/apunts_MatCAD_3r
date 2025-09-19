@@ -1,19 +1,69 @@
 {
-  "userAdmonitions": {},
-  "syntaxHighlight": false,
+  "userAdmonitions": {
+    "notacio": {
+      "type": "notacio",
+      "color": "230, 200, 0",
+      "icon": {
+        "name": "pen-square",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Notació",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "teorema": {
+      "type": "teorema",
+      "color": "230, 200, 0",
+      "icon": {
+        "name": "feather",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Teorema",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "lema": {
+      "type": "lema",
+      "color": "230, 200, 0",
+      "icon": {
+        "name": "bookmark",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Lema",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "def": {
+      "type": "def",
+      "color": "230, 200, 0",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Definició",
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
+  "syntaxHighlight": true,
   "copyButton": false,
   "version": "10.3.2",
-  "autoCollapse": false,
+  "autoCollapse": true,
   "defaultCollapseType": "open",
   "injectColor": true,
   "parseTitles": true,
   "dropShadow": true,
   "hideEmpty": false,
   "open": {
-    "admonitions": true,
+    "admonitions": false,
     "icons": true,
     "other": true,
-    "advanced": false
+    "advanced": true
   },
   "icons": [],
   "useFontAwesome": true,
