@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EDPs.md",
-                "mode": "preview",
+                "file": "CAP/CAP.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "EDPs"
+              "title": "CAP"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9cbf2b512f6e12e0",
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EDPs.md",
+                "file": "CAP/CAP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de EDPs"
+              "title": "Esquema de CAP"
             }
           }
         ],
@@ -156,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,8 +174,15 @@
   },
   "active": "c9ac900c02d2709a",
   "lastOpenFiles": [
-    "CAP/exercicis concurrència.md",
+    "Pasted image 20250924200649.png",
+    "Pasted image 20250924193727.png",
+    "Pasted image 20250923181922.png",
+    "Pasted image 20250923181848.png",
+    "Pasted image 20250923181539.png",
+    "Pastedimage20250923174736.png",
+    "CAP/CAP.md",
     "EDPs.md",
+    "CAP/exercicis concurrència.md",
     "FÍSICA.md",
     "CAP/Sense títol",
     "Sense títol",
