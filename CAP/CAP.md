@@ -55,7 +55,7 @@ title: visió del HW en aquest tema
 1. Utilitzem els múltiples recursos disponibles per executar diferents processos i/o fluxos que col·laboren en la resolució d'un problema al mateix temps.
 2. Els `treads` (que comparteixen recursos del procés) s'executen en processadors on es comparteix memòria i els `processos` (que són independents des del punt de vista dels recursos) s'executen en processadors independents.
 
-## Model de memòria compartida
+### Model de memòria compartida
 
 És un model de programació paral·lela
 ```ad-info
@@ -102,7 +102,7 @@ title: Mutex (**mut**ual **ex**clusion)
 + **Unlock**: Si un thread aplica aquesta operació en un mutex que es troba en estat **tancat**, el thread continua la seva execusió, el mutex passa a l'estat obert i es desbloquejen els threads que estan bloquejats en l'operació de bloqueig d'aquest mutex. 
 ```
 
-## Model de memòria distribuïda
+### Model de memòria distribuïda
 És un model de programació paral·lela
 ```ad-info
 title: 
@@ -137,8 +137,8 @@ Quan tens diversos ordinadors o processos, no comparteixen memòria, així que p
 ```
 ````
 
-### Programació paral·lela
-#### Disseny d'aplicacions paral·leles
+## Programació paral·lela
+### Disseny d'aplicacions paral·leles
 + Aplicació, sistema i model de programació fortament relacionats
 + No es pot dissenyar una aplicació paral·lela sense tenir una idea bastant aproximada del sistema i model que s'utilitzarà
 
@@ -159,3 +159,45 @@ title: Fonts de paralelisme
 + **Nivell de funcions**: al que alguns procediments del programa s'executen simultaniament. Grà mig.
 + **Nivell de programes**: quan el sistema paralel executa programes concurrentment, d'una mateixa aplicació o no. Grà gruixut.
 ```
+
+`````ad-teo
+title: Mètode de Foster
+Divideix el problema en 4 etapes:
+```ad-caixa
+title: Partició
+1.  El còmput i les dades es descomponen en tasques
+2. Es centra l'atenció en explotar oportunitats de paral·lelisme (ignorant aspectes com el nº de processadors)
+3. S'han d'evitar cómputs i assignacions redundants per afavorir l'escalabilitat de l'algoritme.
+```
+````ad-caixa
+title: Comunicació
+1. Es determina la comunicació requerida per coordinar les tasques.
+	   Es defineixen els canals que conecten les tasques que requereixen dades amb les que en generes
+2. Es defineixen estructures i algoritmes de comunicació.
+	   S'especifica la informació o missatges que s'han d'enviar i rebre en aquests canals
+   ```ad-attention
+   title: Consideracions
+	+ **Memòria distribuïda**: les tasques interactuen enviant i rebent missatges
+	+ **Memòria compartida**: S'han d'utilitzar mecanismes de sincronització per controlar l'accés a memòria (com semàfors, barreres, etc.).
+   
+   ```
+````
+
+```ad-caixa
+title: Agrupació
++ S'evalua el resultat de les etapes anteriors en termes d'eficiència i costos d'implementació
++ S'agrupen les tasques petites en tasques majors (si és necessari)
++ Es revisa l'algoritme obtingut evaluant si pot ser útil agrupar tasques o replicar dades i/o cómputs d'acord a la plataforma seleccionada
++ Amb l'agrupament de tasques podem reduïr la quantitat de dades a enviar i així reduïr el nº de missatges a transmetre i el cost de comunicació
+```
+
+```ad-caixa
+title: Mapping
++ Cada tasca s'assigna a un processador intentant maximitzar l'us d'aquests i reduïr el cost de comunicació
++ L'assignació pot ser:
+	1. **Estàtica**: abans de l'execusió del programa.
+	2. **Dinàmica**: a temps de l'execusió amb algoritmes de balanç de càrrega
+```
+`````
+
+### Mètriques

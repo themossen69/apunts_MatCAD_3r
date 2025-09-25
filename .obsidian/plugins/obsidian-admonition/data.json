@@ -1,7 +1,7 @@
 {
   "userAdmonitions": {
-    "notacio": {
-      "type": "notacio",
+    "not": {
+      "type": "not",
       "color": "230, 200, 0",
       "icon": {
         "name": "pen-square",
@@ -13,8 +13,8 @@
       "noTitle": false,
       "copy": false
     },
-    "teorema": {
-      "type": "teorema",
+    "teo": {
+      "type": "teo",
       "color": "230, 200, 0",
       "icon": {
         "name": "feather",
@@ -23,7 +23,8 @@
       "command": false,
       "title": "Teorema",
       "injectColor": true,
-      "noTitle": false
+      "noTitle": false,
+      "copy": false
     },
     "lema": {
       "type": "lema",
@@ -48,6 +49,18 @@
       "title": "Definició",
       "injectColor": true,
       "noTitle": false
+    },
+    "caixa": {
+      "type": "caixa",
+      "color": "230, 200, 0",
+      "icon": {
+        "name": "lucide-text",
+        "type": "obsidian"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": true
     }
   },
   "syntaxHighlight": true,

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FÍSICA.md",
+                "file": "CAP/CAP.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "FÍSICA"
+              "title": "CAP"
             }
           }
         ]
@@ -157,8 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,6 +173,7 @@
   },
   "active": "c9ac900c02d2709a",
   "lastOpenFiles": [
+    "FÍSICA.md",
     "CAP/CAP.md",
     "Pasted image 20250924200649.png",
     "Pasted image 20250924193727.png",
@@ -183,7 +183,6 @@
     "Pastedimage20250923174736.png",
     "EDPs.md",
     "CAP/exercicis concurrència.md",
-    "FÍSICA.md",
     "CAP/Sense títol",
     "Sense títol",
     "CAP",
