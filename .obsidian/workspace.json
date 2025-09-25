@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CAP/CAP.md",
+                "file": "FÍSICA.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "CAP"
+              "title": "FÍSICA"
             }
           }
         ]
@@ -174,13 +174,13 @@
   },
   "active": "c9ac900c02d2709a",
   "lastOpenFiles": [
+    "CAP/CAP.md",
     "Pasted image 20250924200649.png",
     "Pasted image 20250924193727.png",
     "Pasted image 20250923181922.png",
     "Pasted image 20250923181848.png",
     "Pasted image 20250923181539.png",
     "Pastedimage20250923174736.png",
-    "CAP/CAP.md",
     "EDPs.md",
     "CAP/exercicis concurrència.md",
     "FÍSICA.md",
