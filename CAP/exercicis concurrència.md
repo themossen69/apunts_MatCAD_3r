@@ -78,6 +78,14 @@ Enlairar_avió{
                 estat_pC = 1;
             }
         unlock(m);
-    signa(lliure);
+    signal(lliure);
 }
 ```
+
+
+
+Hola Àjan, molt bona feina! Veiem que aquest any t'estàs implicant molt amb les assignatures i estàs intentant portar-ho tot al dia, excel·lent! Ens alegrem que estiguis fent apunts tant bonics i tant currats, ets un 10!
+
+Et donem molts records des del Satorras! 
+Atentament, 
+Jaume Bachs i Anna Sanchís.

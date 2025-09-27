@@ -186,6 +186,69 @@ title: "Conservació" de moment (linal)
 $$
 ```
 
+```ad-attention
+title: 
+assumim que la força quan els objecectes estan lluny és 0 (no hi ha energia potencial, unicament cinètica)
+
+```
+
+```ad-caixa
+title: Tipus de col·lisions
++ **Elàstica**: conserva l'energia cinètica
+  $$
+\boxed{m_{a}v_{a_{0}}+m_{b}v_{b_{0}}=m_{a}v_{a_{f}}+m_{b}v_{b_{f}}}  
+$$
++ **Inelàstica**: **no** conserva l'energia cinètica
+$$
+\boxed{m_{a}v_{a_{0}}+m_{b}v_{b_{0}}=(m_{a}+mb)v_{ab}}  
+$$
+```
+
+```ad-caixa
+title: Llençament d'un cos (gravetat terrestre)
+Amb vectors:
++ $\vec{r}(t)=(x(t),y(t))$
++ $\vec{v}(t)=(v_{x}(t),v_{y}(t))$
++ $\vec{a}(t)=(a_{x}(t),a_{y}(t))$
+$$
+\boxed{\vec{F}_{g}=mg(-\vec{j})=m \vec{a}}
+$$
+
+![[Captura 2025-09-26 a les 19.02.23.png]]
+```
+
+`````ad-caixa
+title: Pèndol
+$$
+\boxed{T=\frac{1}{2}m(v_{x}^2+v_{y}^2)}
+$$
+$$
+\boxed{U=mgy}
+$$
+Restricció lligadura: $$\boxed{x^2+y^2=R^2}$$
+![[Captura_pendol_fisica.png|175x204]]
+````ad-def
+title: Mètode multiplicadors de Lagrange
+$$
+\boxed{L=T-U+\lambda G}
+$$
+on $G=\frac{x^2}{R^2}+\frac{y^2}{R^2}-1=0$
+Si es desenvolupa i es deriva $L$ per $v_{x},\;v_{y},\;v_{\lambda},\;x,\;y\;\text{i}\;\lambda$ per separat i es convinen els resultats, obtenim:
+$$
+\boxed{\vec{F}_{x}=ma_{x}=\frac{2\lambda}{R}\sin\theta}
+$$
+$$
+\boxed{\vec{F}_{y}=ma_{y}=-mg+\frac{2\lambda}{R}\cos\theta}
+$$
+
+on $\frac{2\lambda}{R}=\text{Força centrípeta}$
+
+
+````
+
+`````
+
+
 
 
 ## Apèndix

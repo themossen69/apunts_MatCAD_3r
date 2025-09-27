@@ -61,6 +61,30 @@
       "title": null,
       "injectColor": true,
       "noTitle": true
+    },
+    "nota": {
+      "type": "nota",
+      "color": "230, 200, 0",
+      "icon": {
+        "name": "sticky-note",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
+    },
+    "code": {
+      "type": "code",
+      "color": "0, 0, 0",
+      "icon": {
+        "name": "lucide-laptop-2",
+        "type": "obsidian"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
     }
   },
   "syntaxHighlight": true,

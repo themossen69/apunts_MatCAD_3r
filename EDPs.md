@@ -8,7 +8,7 @@ L'ordre d'una equació en derivades parcials és (en analogia amb les EDOs) l'or
 
 
 ## Apèndix
-```ad-notacio
+```ad-not
 title: Notació
 + $u_{x_i}=\partial_{x_i}u=\frac{\partial u}{\partial x_i}$
 + $D^{\alpha}u=\frac{\partial^{\left\lvert \alpha \right\rvert}u}{\partial^{\alpha_1}_{x_1}\dots\partial^{\alpha_n}_{x_n}}$

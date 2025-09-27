@@ -201,3 +201,126 @@ title: Mapping
 `````
 
 ### Mètriques
+````ad-def
+title: Speed-Up
+És el factor de millora del rendiment i es defineix com:
+$$
+\boxed{S(n)=\frac{T(1)}{T(n)}}
+$$
+on:
++ $n$ és el nº de processos/recurssos
++ $T(1)$ és el temps d'execisió de l'algoritme sequencial
++ $T(n)$ és el temps d'execussió de l'algoritme paral·lel utilitzant $n$ elements de processament (PE)
+  ```ad-caixa
+  title: Speed-Up ideal
+  $$
+\boxed{S(n)=n}  
+  $$
+  ```
+````
+
+````ad-teo
+title: Llei d'Amdahl
+Estableix que el màxim *Speed-Up* que es pot obtenir d'un programa està limitat per la fracció del programa que no es pot paral·lelitzar.
+$$
+{T(n)=T_{s}+T_{p}}
+$$
+on:
++ $T_{s}=f\cdot T(1)$
++ $T_{p}=\frac{(1-f)\cdot T(1)}{n}$
++ $f \in [0,1]$ és la fracció no paral·lelitzable.
++ $n$ és el nº de processadors/recursos
+$$
+\boxed{T(n)=f\; T(1)+ \frac{(1-f)\;T(1)}{n}}
+$$
+
+$\implies \boxed{S(n)=\frac{1}{f+\frac{1-f}{n}}} \implies \boxed{S(\infty)=\frac{1}{f}}$
+
+```ad-teo
+title: Llei de Gustafson
+Te en compte la càrrega de treball
+$$
+\lim_{ \text{càrrega} \to \infty } f = 0 
+$$
+ara $T_{p}=(1-f)\;T(1)$
+$\implies T(n)=T(1)\quad$ i $\quad T(1)=f\;T(1)+n(1-f)\;T(1)$
+$\implies S(n)=f+n(1-f)$
+```
+
+```ad-warning
+title: Generalització
+1. Equació general del temps d'execusió
+$$
+\boxed{T_{\alpha\beta}(p)=\alpha T_{\text{ser}}+\beta T_{\text{par}}=\alpha fT(1)+\frac{\beta(1-f)T(1)}{n}}
+$$
+on $f$ és la fracció no paralelitzable i $\alpha$ i $\beta$ son factors d'escalabilitat respecte a la complexitat del problema.
+
+2. Equació general Speedup
+$$
+S_{\alpha\beta}(n)=\frac{T_{\alpha\beta}(1)}{T_{\alpha\beta}(n)}=\frac{\alpha f+\beta(1-f)}{\alpha f+\frac{\beta(1-f)}{n}}
+$$
+suposant que $\boxed{\gamma=\frac{\beta}{\alpha}}$
+
+$$
+\boxed{S_{\gamma}(n)=\frac{f+\gamma(1-f)}{f+\frac{\gamma(1-f)}{n}}}
+$$
+
+_Amb $\gamma=1$ ($\alpha=n$) tenim la **Llei d'Amdahl**_
+_Amb $\gamma=n$ ($\alpha=1$ i $\beta=n$) tenim la **Llei de Gustafson**_
+```
+
+````
+
+```ad-def
+title: Eficiència
+L'eficiència per un sistema amb $n$ processadors es defineix com:
+$$
+\boxed{E(n)=\frac{S(n)}{n}=\frac{T(1)}{nT(n)}}\quad,\;\text{amb}\; \frac{1}{n}\leq E(n)\leq 1
+$$
+
++ És una comparació del grau de Speed-up arribat amb el valor màxim.
++ Index d'utilització de la CPU a l'hora de resoldre el problema comparat amb el temps que es gasta en comunicació i sincronització
++ L'eficiència més baixa ($E(n)\to 0$) correspon al cas en que tot el programa s'executa en un sol processador en sèrie.
++ L'eficiència màxima ($E(n)=1$), s'obté quan tots els processadors estan sent completament utilitzats durant tota la execusió.
+```
+
+````ad-def
+title: Escalabilitat
+Un sistema és escalable per un determinat nombre de processadors ($1\dots n$), si és possible trobar un factor d'augment de la mida de treball que faci que l'eficiència $E(n)$ del sistema es mantingui **constant**.
+El problema es pot expressar com:
+
+$$
+\boxed{E(n,p)=E(k\cdot n,x\cdot p)}
+$$
+
+on:
++ $n$ és el nº de recursos
++ $p$ la mida del problema (_workload_)
++ $k\;(>1)$ el percentatge d'increment de recursos
++ $x\;(\geq1)$ el percentetge d'augment de la mida del problema
+  
+  ```ad-nota
+  + Si **x = 1**: problema fortament escalable (*Strong Scaling*)
+  + Si **x = K**: problema fràgilment escalable (*WeakScaling*)
+  ```
+````
+
+````ad-caixa
+La part paralelitzable $(1-f)$ no és perfectament paral·lelitzable entre $n$ recursos. 
+Existeix una sobecàrrega causada per la sincronització i comunicació entre recursos:
+$$T_{p}=\frac{(1-f)T(1)}{n}+\boldsymbol{T_{\text{overhead}}}$$
+```ad-def
+title: Cost
+$$
+\text{Cost}=nT(n)
+$$
+Normalment $\text{Cost}>T(1)$, idelament $\text{Cost}=1$
+```
+```ad-def
+title: *Overhead* global de l'algoritme
+$$
+\boxed{\text{Cost}-T(1)}
+$$
+```
+````
+
