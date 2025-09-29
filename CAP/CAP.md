@@ -18,7 +18,7 @@ title: Vista general del HW
 + Arithmetic Logic Unit 
 + Unitat de control
 
-![[Pastedimage20250923174736.png]]
+![[Pastedimage20250923174736.png|259x196]]
 ```
 
 ````ad-info
@@ -44,7 +44,7 @@ title: Els fluxos del mateix procés comparteixen
 
 ```ad-tip
 title: visió més realista del HW
-![[Pasted image 20250923181539.png]]
+![[Pasted image 20250923181539.png|241x233]]
 ```
 
 ```ad-important
@@ -149,7 +149,7 @@ title: Arquitectura
 + Single instruction, multiple data (SIMD)
 + Multiple Instructions, Multiple Data (MIMD) 
 
-  ![[Pasted image 20250924200649.png]]
+  ![[Pasted image 20250924200649.png|243x239]]
 ```
 
 ```ad-info
